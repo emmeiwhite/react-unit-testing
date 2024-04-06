@@ -23,7 +23,7 @@ const UserForm = ({ addUser }) => {
       id: new Date().toUTCString(),
     };
 
-    //   Call addUser to add the new user to the App state
+    //  Call addUser to add the new user to the App state. My newUser also has an id property, so while writing the assertions I have to keep that in mind as well
     addUser(newUser);
 
     setFormData({
